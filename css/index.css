@@ -30,6 +30,7 @@ body{
 .logos{
   position: relative;
   animation: secondmove 3s infinite;
+
   animation-timing-function: ease-out;
 }
 @keyframes move{
@@ -166,6 +167,7 @@ font-family: cursive;
   width: 50%;
   margin-left: 10px;
   padding: 8px;
+  text-align:justify;
 }
 .i{
   margin: 4px;
@@ -204,23 +206,143 @@ font-family: cursive;
 .item3{
   padding: 2px;
 }
-@media screen and (min width: 480px){
+@media screen and (max-width: 480px) {
   body{ width: 100%;}
   .mainhead{
-    margin-bottom: 1px;
     display: flex;
     flex-direction: column;
+    padding-left: 2px;
+  }
+  .logo{
+  margin-left:.2%;
+  position: inherit;
+  }
+  .logos{
+    margin-left: 25%;
+    position: inherit;
+  }
+  @keyframes move{
+    from{left: 0;}
+    to{left: 0;}
+  }
+  @keyframes secondmove{
+    from{right: 0;}
+    to{right:0;}
+  }
+  .navbar{
+    padding-left: 0;
+    margin-top: 1px;
     margin-left: 1px;
-    margin-top: 0;
-    box-shadow: 4px 4px 5px #000033;
-    }
-    .logo{
+    float: left;
+    text-align: center;
+  }
+  .navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar li{
+    display: block;
+    float:left;
+    padding-left: 1px;
+    margin-left: 1px;
+  }
+  .navbar a{
+    line-height:15px;
+    display: block;
+  }
+  .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn{
+
+    margin-left: 50%;
+  }
+  .sidenav{
+    width:98%;
+    margin-left: 15%;
+    margin-top: 4px;
+  }
+  .a{
       position: relative;
-      margin-left: 2px;
-      width: 200px;
+      width: 30%;
+      margin: 10px auto 3px 50px;
     }
-    .logos{
-      position: relative;
-      width: 200px;
+    .a:hover{
+      border-radius: 50%;
+      transform: translate(0px, -10px);
+      opacity: .5;
+    }
+    .b{
+        position: relative;
+        width: 30%;
+        margin: 10px auto 3px 50px;
       }
+      .b:hover{
+        border-radius: 50%;
+        transform: translate(0px, -10px);
+        opacity: .5;
+      }
+      .c{
+          position: relative;
+          width: 30%;
+          margin: 10px auto 3px 50px;
+        }
+        .c:hover{
+          border-radius: 50%;
+          transform: translate(0px, -10px);
+          opacity: .5;
+        }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  .f1:hover .a {
+    opacity: 0.3;
+  }
+  .f1:hover .middle {
+    opacity: 1;
+  }
+  .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  .right{
+    width: 95%;
+    margin-left: 2% 2% auto auto;
+    padding: 2%;
+    text-align:justify;
+  }
+  .i{
+    margin: 4px;
+    width: 20%;
+  }
+  .images{
+    height: 300px;
+    width: 20%;
+    float: left;
+    margin: 2% auto auto 50%;
+  }
+  .flex-container{
+    width: 100%;
+    height:auto;
+    padding: 2px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0e2f44;
+    color: white;
+  }
+
+
+
+
     }

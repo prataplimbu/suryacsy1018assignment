@@ -1,68 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Home page</title>
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <div class="wrap"><!-- to make fix header-->
     <header class="mainhead">
-      <div class="fir"> <!-- fir denotes the first division of mainhead-->
-      <img src="fourthlogo.png">
-    </div>
-    <div class="sec"><!--sec denotes the second division of mainhead-->
-      <form>
-        <input type="text" placeholder="search..."required>
-        <input type="button" value="search">
-      </form>
-    </div>
-    </header>
-    <div class="navbar">
+      <div class="logo">
+        <img src="images/mylogo.png" alt="contains logo">
+      </div>
+      <div class="logos">
+        <img src="images/logo2.png" alt="contains logo">
+      </div>
+      <div class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="home.html">Home</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="bio.html">Bio</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
+  </header>
+  </div>
     <section class="main">
-      <div class="sidenav">
-        <ul>
-          <li><a href=".">About the website.</a></li>
-          <li><a href=".">About developer.</a></li>
-          <li><a href=".">Contact us.</a></li>
-          <li><a href=".">Start your career here.</a></li>
-        </ul>
-      </div>
-      <div class="right">
-        <form>
-          <label>First name</label><br>
-          <input type="text" id="fname" name="first name" placeholder="your first name"required><br>
-          <label>Last name</label><br>
-          <input type="text" id="lname" name="last name" placeholder="your last name"required><br>
-          <label>Address</label><br>
-          <input type="text" id="address" name="address" placeholder="your address"><br>
-          <label>Email</label><br>
-          <input type="email" id="email" name="email" placeholder="your email" required><br>
-          <label>Country</label><br>
-            <select id="country">
-              <option>Nepal</option>
-              <option>United Kingdom</option>
-              <option>United States</option>
-              <option>China</option>
-              <option>Australia</option>
-              <option>Spain</option>
+      <input class="search" type="text" placeholder="Search for help.....">
+      <input class="do" type="button" value="search">
+      <form class="myform">
+        <div class="information">
+          <h4>Contact me:</h4>
+          <div class="contacts">
+            <img src="images/phone.gif" alt="this contains picture of phone">
+          </div>
+        </div>
+        <fieldset class="form">
+          <div class="all">
+            <label class="let">Firstname:</label><br>
+            <input class="name" type="text" placeholder="firstname">
+          </div>
+          <div class="all">
+            <label class="let">Lastname:</label><br>
+            <input class="name" type"text" placeholder="lastname">
+          </div>
+          <div class="all">
+            <label class="let">E-mail</label><br>
+            <input class="name" type="e-mail" placeholder="e-mail address">
+          </div>
+          <div class="all">
+       <label class="let">Your message: </label><br>
+       <textarea class="name" placeholder="Textareas work too"></textarea>
+   </div>
 
-            </select>
-          <input type="button" on click="thank you" value="submit">
+            <div class="myform">
+               <label class="let">Country:</label><br>
+               <select class="name" >
+                   <option>Nepal</option>
+                   <option>United kingdom</option>
+                   <option>Unites States</option>
+               </select>
+           </div><br>
+           <button type="submit" class="button">submit</submit>
+        </fieldset>
+      </form>
 
-        </form>
-      </div>
+
     </section>
     <div class="flex-container">
       <div class="flex-item item1">
-
         <h3>Find me:</h3>
-        <img class="image" src="capture.jpg">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="160" height="130" frameborder="0"  marginheight="0" src="https://maps.google.com/maps?q=Thali Kathmandu, &t=&z=12&ie=UTF8&iwloc=&output=embed" marginwidth="0">
+          </iframe><a href="http://www.embedgooglemap.net"></a>
+        </div>
+        </div>
       </div>
       <div class="flex-item item2">
         <h2>About website</h2>
@@ -80,14 +92,12 @@
         Contact: 01-4451166<br>
         E-mail: pratap_hangam444@gmail.com
         <h3>Connect with me:</h3>
-        <img src="fb.jpg">
-        <img src="twitter.jpg">
-        <img src="you.jpg">
-        <img src="insta.jpg">
+          <a href="https://www.facebook.com/surya.hangam"><img src="images/fb.png"></a>
+          <a href="."><img src="images/twitter.png" alt="twitter"></a>
+          <a href="."><img src="images/you.png" alt="you tube"></a>
+          <a href="."><img src="images/insta.png" alt="instagram"></a>
       </div>
-
     </div>
-
   </body>
 </html>
 <!--

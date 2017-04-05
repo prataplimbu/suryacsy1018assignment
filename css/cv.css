@@ -3,6 +3,7 @@ body{
   padding: auto;
   width: 100%;
 }
+
 /*.wrap{
   position: fixed;
   height: 150px;
@@ -77,106 +78,56 @@ font-family: cursive;
 .navbar li a:active{
   background-color:#000019;
 }
-.sec{
-  padding-top: 1%;
-}
 .main{
   width: 100%;
+  padding: 3px;
+  background:#ededed;
+  font-family:Helvetica;
+}
+.main h3{
+  color: green;
+}
+.main p{
+  font-size: 20px;
+  margin: 30px auto auto 80px;
+}
+.education{
+  width: 95%;
+  padding: 0px;
+  font-size: 18px;
+  margin: 0px;
+}
+.education ul{
   display: flex;
   flex-direction: row;
+  list-style-type: none;
 }
-.btn{
-  height: 25px;
-  width: 90px;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  padding: 5px;
-  opacity: .9;
+.education li{
+  padding: 2% 0 0 3%;
+  justify-content: space-around;
 }
-.btn a{
-  text-decoration: none;
-}
-.btn:hover{
-  background: green;
-  box-shadow: 4px 4px 5px gray;
-  }
-  .btn a:hover{
-    color: white;
-  }
-.sidenav{
-  width:25%;
-  margin-right: 4px;
-  margin-top: 10px;
+
+.three{
+  width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 0 auto auto 80px;
+  font-size: 18px;
+
 }
-/* animations starts here*/
-.a{
-    position: relative;
-    width: 50%;
-    margin: 50px auto auto 20px;
-  }
-  .a:hover{
-    border-radius: 50%;
-    transform: translate(0px, -10px);
-    opacity: .5;
-  }
-  .b{
-      position: relative;
-      width: 50%;
-      margin: 50px auto auto 20px;
-    }
-    .b:hover{
-      border-radius: 50%;
-      transform: translate(0px, -10px);
-      opacity: .5;
-    }
-    .c{
-        position: relative;
-        width: 50%;
-        margin: 50px auto auto 20px;
-      }
-      .c:hover{
-        border-radius: 50%;
-        transform: translate(0px, -10px);
-        opacity: .5;
-      }
-/*animation ends here*/
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+.skills{
+  width: 38%;
+  margin-left: 5px;
 }
-.f1:hover .a {
-  opacity: 0.3;
+.experience{
+  margin: 2px;
+  width: 38%;
 }
-.f1:hover .middle {
-  opacity: 1;
+.other{
+  font-size: 20px;
+  margin: 0 auto auto 80px;
 }
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-.right{
-  width: 50%;
-  margin-left: 10px;
-  padding: 8px;
-}
-.i{
-  margin: 4px;
-  width: 20%;
-}
-.images{
-  height: 600px;
-  width: 400px;
-  float: right;
-  margin-right: 1px;
-}
+
 .flex-container{
   width: 100%;
   height:auto;
