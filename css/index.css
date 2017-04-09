@@ -65,11 +65,12 @@ body{
   display: block;
   font-weight: bold;
   }
-.navbar li:hover{
+.navbar li:hover {
   background-color: #E62117;
   width: auto;
   border-radius: 2px;
 }
+.navbar li.active{ background-color:  #E62117; }
 .navbar li a:hover{
 color:  #000019;
 font-weight: bolder;
@@ -203,7 +204,7 @@ font-family: cursive;
 .item3{
   padding: 2px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) { /* for mobile view*/
   body{ width: 99%;}
   .mainhead{
     display: flex;

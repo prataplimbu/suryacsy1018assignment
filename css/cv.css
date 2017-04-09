@@ -70,6 +70,7 @@ body{
   width: auto;
   border-radius: 2px;
 }
+.navbar li.active{ background-color:  #E62117; }
 .navbar li a:hover{
 color:  #000019;
 font-weight: bolder;
