@@ -2,19 +2,20 @@
 <html>
   <head>
     <title>cv</title>
-    <link rel="stylesheet" type="text/css" href="css/cv.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cv.css"><!-- css is inside the css folder-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- for mobile view-->
+    <meta charset="UTF-8"><!-- encoding-->
   </head>
   <body>
-    <div class="wrap">
+
     <header class="mainhead"><!-- this is main head and it has three divs inside it-->
-      <div class="logo">
+      <div class="logo"><!-- this is for logo-->
         <img src="images/mylogo.png" alt="contains logo">
       </div>
-      <div class="logos">
+      <div class="logos"><!-- this is for logo-->
         <img src="images/logo2.png" alt="contains logo">
       </div>
-      <div class="navbar">
+      <div class="navbar"><!-- there are four items in navigation-->
       <ul>
         <li><a href="index.html">Home</a></li>
         <li class="active"><a href="cv.html">CV</a></li>
@@ -23,22 +24,27 @@
       </ul>
     </div>
   </header>
-  </div>
-    <section class="main"><!-- section includes the all body parts-->
-      <div class="paragraph">
+
+    <section class="main"><!-- section includes the all body parts; it includes 4 divs and 1 sub div-->
+      <div class="paragraph"><!--it is for short introduction paragraph-->
         <p>
         I've been passonate about programming since I was 8.
         From that time I dedicated my most of the time in coding.
-      </p>
+      </p><br><br>
+      <h4>Name: Surya pratap Limbu.<br>
+          DOB: Dec 1, 1998<br>
+          Gender: Male.<br>
+          Address: Kathmandu, Nepal.
+    </h4>
     </div>
-    <div class="education">
+    <div class="education"><!--displayed in unordered list;(education info)-->
       <ul>
         <li><h3>School:</h3> Narayani secondary.</li>
         <li><h3>High school:</h3>Universal college.</li>
         <li><h3>Bachlor:</h3>Naya Aayam Multi Institute(running).</li>
         </ul>
     </div>
-    <div class="three"><!--three means there are three div inside this.-->
+    <div class="three"><!--it has two divs; which is displayed in a row-->
     <div class="skills">
       <h3>Master in:</h3>
       <ul>
@@ -61,7 +67,7 @@
       </ul>
     </div>
   </div>
-  <div class="other">
+  <div class="other"><!-- this div is displayed separate as it is the last div of section part-->
     <h3>Other skills:</h3>
     <ul>
       <li>Hardware configuration.</li>
@@ -76,16 +82,13 @@
 
     </section>
     <div class="flex-container"><!-- this is footer part, it contains three containers.-->
-      <div class="flex-item item1">
+      <div class="flex-item item1"><!-- this contains map-->
         <h3>Find me:</h3>
       <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe width="160" height="130" frameborder="0"  marginheight="0" src="https://maps.google.com/maps?q=Thali Kathmandu, &t=&z=12&ie=UTF8&iwloc=&output=embed" marginwidth="0">
-          </iframe><a href="http://www.embedgooglemap.net"></a>
-        </div>
+        <img src="images/myplace.jpg" alt="this is map" class="map">
         </div>
       </div>
-      <div class="flex-item item2">
+      <div class="flex-item item2"><!-- contains text about the website and copyright sign-->
         <h2>About website</h2>
 
         <p>
@@ -97,24 +100,15 @@
         <br>
         Copyright &copy; 2017 all right reserved.
       </div>
-      <div class="flex-item item3">
+      <div class="flex-item item3"><!-- contains contact info and links to social sites-->
         Contact: 01-4451166<br>
         E-mail: pratap_hangam444@gmail.com
         <h3>Connect with me:</h3>
-          <a href="https://www.facebook.com/surya.hangam"><img src="images/fb.png" alt="contains logo of facebook"></a>
-          <a href="."><img src="images/twitter.png" alt="contains logo of twitter"></a>
-          <a href="."><img src="images/you.png" alt="contains logo of youtube"></a>
-          <a href="."><img src="images/insta.png" alt="contains logo of instagram"></a>
+          <a href="https://www.facebook.com/surya.hangam"><img src="images/fb.png" alt="contains logo of facebook"></a><!-- link to facebook page-->
+          <a href="."><img src="images/twitter.png" alt="contains logo of twitter"></a><!-- link to twitter page-->
+          <a href="."><img src="images/you.png" alt="contains logo of youtube"></a><!-- link to you tube page-->
+          <a href="."><img src="images/insta.png" alt="contains logo of instagram"></a><!-- link to instagram page-->
       </div>
     </div>
   </body>
 </html>
-<!--
-<div class="footer">
-  <div class="flex-item item1">
-  <h2>header</h2>
-
-  </div>
-  <div class="flex-item item2">flex item 2</div>
-  <div class="flex-item item3">flex item 3</div>
-</div>

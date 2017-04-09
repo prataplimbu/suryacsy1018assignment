@@ -1,17 +1,9 @@
 body{
   margin: auto;
-  padding: auto;
+
   width: 100%;
 }
-
-/*.wrap{
-  position: fixed;
-  height: 150px;
-  width: 100%;
-  z-index: 100;
-  height: 150px;
-}*/
-.mainhead{
+.mainhead{/*main head contains 2 logos and navigation bar*/
   width: 100%;
   background:#0e2f44;
   margin-bottom: 1px;
@@ -19,9 +11,12 @@ body{
   flex-direction: row;
   margin-left: 2px;
   margin-top: 0;
-  box-shadow: 4px 4px 5px #000033;
+  box-shadow: 4px 4px 5px #000033;/*main head has a box shadow*/
   padding-left: 2px;
 }
+/*logo and logos class are animated to move forward and backward.
+Animation count is infinite, time is 3 second
+*/
 .logo{
   position: relative;
   animation: move 3s infinite;
@@ -41,7 +36,7 @@ body{
   from{right: 0px;}
   to{right:30px;}
 }
-.navbar{
+.navbar{ /*navigation bar is in the right of the heading by using float */
   padding-left: 100px;
   margin-top: 1px;
   margin-left: 2px;
@@ -76,20 +71,24 @@ color:  #000019;
 font-weight: bolder;
 font-family: cursive;
 }
-.main{
+.main{/*this is class for the body part, which is displayed in row*/
   width: 100%;
   padding: 3px;
   background:#ededed;
   font-family:Helvetica;
 }
-.main h3{
+.main h3{ /*all h3 are green inside the main class*/
   color: green;
 }
 .main p{
   font-size: 20px;
   margin: 30px auto auto 80px;
 }
+.main h4{ margin-left: 70px;}
 .education{
+  /*class for displaying the education info;
+  it has unordered list;
+  unordered list are displayed in row and list has space around it*/
   width: 95%;
   padding: 0px;
   font-size: 18px;
@@ -105,7 +104,7 @@ font-family: cursive;
   justify-content: space-around;
 }
 
-.three{
+.three{/*has two divs(skills and experience), displayed in row*/
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -121,12 +120,14 @@ font-family: cursive;
   margin: 2px;
   width: 38%;
 }
-.other{
+.other{/*separately displayed in the last*/
   font-size: 20px;
   margin: 0 auto auto 80px;
 }
 
-.flex-container{
+.flex-container{/*footer part;
+  conains three separate containers
+  */
   width: 100%;
   height:auto;
   padding: 2px;
@@ -136,26 +137,32 @@ font-family: cursive;
   background-color: #0e2f44;
   color: white;
 }
-.flex-item{
-  margin: 12px auto auto 35px;
+.flex-item{/*covers all three items*/
+  margin: 5px auto auto 35px;
 }
-.item1{
+.item1{/*contains the map*/
   padding: 2px;
 }
 .mapouter{
   height: 130px;
   width: 150px;
-  padding: 2px auto auto 1px;
+  padding: 2px 1px;
 }
-.item2{
+.map{
+  height: 90%;
+  width: 100%;
+}
+.item2{/*includes some content, will be in the middle of the two containers*/
   padding: 2px;
 }
-.item3{
+.item3{/*contains links to social sites and contact info*/
   padding: 2px;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px){/*this allows us to use the layout in the mobile device easily*/
   body{ width: 100%; margin: 0; padding: 0;}
-  .mainhead{
+  .mainhead{/*contains 2 logos and navigation bar;
+    all will be displayed in column;
+    logo will not move, cause there is no space */
 
     display: flex;
     flex-direction: column;
@@ -167,23 +174,18 @@ font-family: cursive;
       margin-left:25%;
       width: 10px;
       float: left;
+      animation: move 0s 0;
     }
     .logos{
       position: relative;
       width: 10px;
       margin-left: 25%;
       float: left;
+      animation: secondmove 0s 0;
 
       }
-      @keyframes move{
-        from{left: 0;}
-        to{left: 0;}
-      }
-      @keyframes secondmove{
-        from{left: 0;}
-        to{left:0;}
-      }
-      .navbar{
+
+      .navbar{/*all list of navigation bar is displayed in column*/
         padding-left: 0;
         margin-top: 0px;
         margin-left: 0px;
@@ -207,7 +209,9 @@ font-family: cursive;
         line-height:50px;
         display: block;
       }
-      .main{
+      .main{/*all the contains in the main class will be displayed in column;
+        all the padding is 0;
+        size of the images and font are managed*/
         width: 100%;
         padding: 0;
         display: flex;
@@ -219,6 +223,7 @@ font-family: cursive;
         margin: 0px;
         text-align: center;
       }
+      .main h4{ margin-left: 1%;}
       .education{
         width: 100%;
         padding: 0px;
@@ -256,7 +261,7 @@ font-family: cursive;
         margin:0px;
       }
 
-      .flex-container{
+      .flex-container{/*this is footer part; all three containers are displayed in column*/
         width: 100%;
         height:auto;
         padding: 0px;
@@ -265,7 +270,7 @@ font-family: cursive;
         flex-direction: column;
 
       }
-      .flex-item{
+      .flex-item{/*covers all three containers*/
         margin: 5px;
       }
       .item1{
