@@ -1,3 +1,4 @@
+/*Name: Suryapratap limbu. Nile id: 17425102*/
 body{
   margin: auto;
   width: 100%;
@@ -172,7 +173,7 @@ font-family: cursive;
         width: 75%;
         animation: secondmove 0s 0;
       }
-    
+
       .navbar{/*navigation bar is shown in the column in mobile*/
         padding-left: 0;
         margin-top: 0;
